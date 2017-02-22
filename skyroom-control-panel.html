@@ -21,329 +21,321 @@
 </head>
 
 <body id="requested_gadget_" onload="hideWorkingNotification();">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-1 col-md-1 col-sm-1"></div>
-            <div class="col-lg-10 col-md-10 col-sm-10">
-                <div id="working_notification" style="visibility: hidden;">Loading...</div>
-                <script type="text/javascript">
-                    default_loading_message = "Loading...";
-                    var navigate_away_message = "You have unsaved changes in this page";
-                    showWorkingNotification();
-                </script>
+    <div id="working_notification" style="visibility: hidden;">Loading...</div>
+    <script type="text/javascript">
+        default_loading_message = "Loading...";
+        var navigate_away_message = "You have unsaved changes in this page";
+        showWorkingNotification();
+    </script>
 
-                <div id="header" class="container clearfix">
-                    <div id="site-info">
-                        <h1><a href="">SKYROOM: Control Panel</a></h1>
-                        <p>ارتباطات آنلاین</p>
-                    </div>
-                    <div id="login-info">
-                        <img alt="" width="48" height="48" src="./skyroom-control-panel_files/photo48px.png">
-                        <div class="name"><a href="">پشتیبان</a>
-                        </div>
-                        <div class="logout">
-                            <a href="">Logout</a> -
-                            <a href="">View Site</a>
-                        </div>
-                    </div>
-                </div>
+    <div id="header" class="container clearfix">
+        <div id="site-info">
+            <h1><a href="">SKYROOM: Control Panel</a></h1>
+            <p>ارتباطات آنلاین</p>
+        </div>
+        <div id="login-info">
+            <img alt="" width="48" height="48" src="./skyroom-control-panel_files/photo48px.png">
+            <div class="name"><a href="">پشتیبان</a>
+            </div>
+            <div class="logout">
+                <a href="">Logout</a> -
+                <a href="">View Site</a>
+            </div>
+        </div>
+    </div>
 
-                <div id="container" class="container clearfix">
-                    <div id="main-section" class="clearfix">
-                        <div id="msgbox-wrapper">
-                        </div>
-                        <div id="mainbar" class="col-md-9">
-                            <div class="row">
-                                <div class="main-menu">
-                                    <h2 class="main-menu-header">General</h2>
-                                    <a class="main-item col-sm-2 col-xs-4" href="">
-                                        <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(30).png" title="The Jaws settings." alt="Settings"> Settings
-                                    </a>
-                                    <a class="main-item col-sm-2 col-xs-4" href="">
-                                        <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(31).png" title="Manage gadgets and plugins" alt="Components"> Components
-                                    </a>
-                                    <a class="main-item col-sm-2 col-xs-4" href="">
-                                        <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(32).png" title="Manage how you want your URL to be accesed or printed" alt="URL Manager"> URL Manager
-                                    </a>
-                                    <a class="main-item col-sm-2 col-xs-4" href="">
-                                        <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(33).png" title="The Jaws layout." alt="Layout"> Layout
-                                    </a>
-                                    <a class="main-item col-sm-2 col-xs-4" href="">
-                                        <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(34).png" title="User administration." alt="Users"> Users
-                                    </a>
-                                    <a class="main-item col-sm-2 col-xs-4" href="">
-                                        <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(35).png" title="Manage what&#39;s happening around your web site" alt="Policy"> Policy
-                                    </a>
-                                    <a class="main-item col-sm-2 col-xs-4" href="">
-                                        <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(36).png" title="Add/Edit language&#39;s strings" alt="Languages"> Languages
-                                    </a>
-                                    <a class="main-item col-sm-2 col-xs-4" href="">
-                                        <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(37).png" title="Show information about OS, PHP, Database and Jaws" alt="System Information"> System Information
-                                    </a>
-                                    <a class="main-item col-sm-2 col-xs-4" href="">
-                                        <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(38).png" title="A gadget to management tags." alt="Tags"> Tags
-                                    </a>
-                                    <a class="main-item col-sm-2 col-xs-4" href="">
-                                        <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/view_site.png" title="View Site" alt="View Site"> View Site
-                                    </a>
-                                </div>
-                                <div class="main-menu">
-                                    <h2 class="main-menu-header">Gadgets</h2>
-                                    <a class="main-item col-sm-2 col-xs-4" href="">
-                                        <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(39).png" title="Link your blocks" alt="Blocks"> Blocks
-                                    </a>
-                                    <a class="main-item col-sm-2 col-xs-4" href="">
-                                        <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(40).png" title="A multi user blog system. Supports trackbacks, pingbacks, commenting, and XML feeds." alt="Blog"> Blog
-                                    </a>
-                                    <a class="main-item col-sm-2 col-xs-4" href="">
-                                        <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(41).png" title="Let visitors contact you." alt="Contacts"> Contacts
-                                    </a>
-                                    <a class="main-item col-sm-2 col-xs-4" href="">
-                                        <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(42).png" title="Stores Frequently Asked Questions and their answers." alt="FAQ"> FAQ
-                                    </a>
-                                    <a class="main-item col-sm-2 col-xs-4" href="">
-                                        <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(43).png" title="An easy and fast filebrowser to view your files" alt="FileBrowser"> FileBrowser
-                                    </a>
-                                    <a class="main-item col-sm-2 col-xs-4" href="">
-                                        <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(44).png" title="Display navigation menus." alt="Menu"> Menu
-                                    </a>
-                                    <a class="main-item col-sm-2 col-xs-4" href="">
-                                        <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(45).png" title="Sends Jaws notifications to users via drivers." alt="Notification"> Notification
-                                    </a>
-                                    <a class="main-item col-sm-2 col-xs-4" href="">
-                                        <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(46).png" title="Online Payment Gadget" alt="Payment"> Payment
-                                    </a>
-                                    <a class="main-item col-sm-2 col-xs-4" href="">
-                                        <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(47).png" title="User registration" alt="Registration"> Registration
-                                    </a>
-                                    <a class="main-item col-sm-2 col-xs-4" href="">
-                                        <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(48).png" title="Online Communications" alt="Skyroom"> Skyroom
-                                    </a>
-                                    <a class="main-item col-sm-2 col-xs-4" href="">
-                                        <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(49).png" title="A gadget to create and manage static content." alt="Static Page"> Static Page
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <script type="text/javascript">
-                            init();
-                        </script>
-                        <div id="sidebar" class="col-md-3">
-                            <div class="notify_box notify_components">
-                                <h2>Not installed gadgets</h2>
-                                <div class="notify_content">
-                                    <ul>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="Logs - Logs user activity" alt="Logs" src="./skyroom-control-panel_files/logo.png">
-                                                <label>Logs</label><a class="install" title="Logs - Logs user activity" href="">Install</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="Theme Manager - Manage your site themes" alt="Theme Manager" src="./skyroom-control-panel_files/logo(1).png">
-                                                <label>Theme Manager</label><a class="install" title="Theme Manager - Manage your site themes" href="">Install</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="Faramooz - Learning Management System" alt="Faramooz" src="./skyroom-control-panel_files/logo(2).png">
-                                                <label>Faramooz</label><a class="install" title="Faramooz - Learning Management System" href="">Install</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="Mailer - Bulk mail sender &amp; tracker" alt="Mailer" src="./skyroom-control-panel_files/logo(3).png">
-                                                <label>Mailer</label><a class="install" title="Mailer - Bulk mail sender &amp; tracker" href="">Install</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="SMS - Sends, receives and stores messages" alt="SMS" src="./skyroom-control-panel_files/logo(4).png">
-                                                <label>SMS</label><a class="install" title="SMS - Sends, receives and stores messages" href="">Install</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="Address Book - AddressBook Desc" alt="Address Book" src="./skyroom-control-panel_files/logo(5).png">
-                                                <label>Address Book</label><a class="install" title="Address Book - AddressBook Desc" href="">Install</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="Banners - Banners management." alt="Banners" src="./skyroom-control-panel_files/logo(6).png">
-                                                <label>Banners</label><a class="install" title="Banners - Banners management." href="">Install</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="Directory - Total file management with sharing capability." alt="Directory" src="./skyroom-control-panel_files/logo(7).png">
-                                                <label>Directory</label><a class="install" title="Directory - Total file management with sharing capability." href="">Install</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="Emblems - A gadget to display emblems in your site" alt="Emblems" src="./skyroom-control-panel_files/logo(8).png">
-                                                <label>Emblems</label><a class="install" title="Emblems - A gadget to display emblems in your site" href="">Install</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="Events Calendar - Personal calendar with sharing capability." alt="Events Calendar" src="./skyroom-control-panel_files/logo(9).png">
-                                                <label>Events Calendar</label><a class="install" title="Events Calendar - Personal calendar with sharing capability." href="">Install</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="Feed Reader - Get RSS/ATOM/OPML news from any site and use it as a planet gadget" alt="Feed Reader" src="./skyroom-control-panel_files/logo(10).png">
-                                                <label>Feed Reader</label><a class="install" title="Feed Reader - Get RSS/ATOM/OPML news from any site and use it as a planet gadget" href="">Install</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="Forums - A simple forum" alt="Forums" src="./skyroom-control-panel_files/logo(11).png">
-                                                <label>Forums</label><a class="install" title="Forums - A simple forum" href="">Install</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="Friends - Link your friends" alt="Friends" src="./skyroom-control-panel_files/logo(12).png">
-                                                <label>Friends</label><a class="install" title="Friends - Link your friends" href="">Install</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="Glossary - A pretty glossary to keep updated the meaning of some of your favorite words" alt="Glossary" src="./skyroom-control-panel_files/logo(13).png">
-                                                <label>Glossary</label><a class="install" title="Glossary - A pretty glossary to keep updated the meaning of some of your favorite words" href="">Install</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="Launcher - A minimalistic gadget to run independent scripts" alt="Launcher" src="./skyroom-control-panel_files/logo(14).png">
-                                                <label>Launcher</label><a class="install" title="Launcher - A minimalistic gadget to run independent scripts" href="">Install</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="Link Dump - Easily link to things around the net" alt="Link Dump" src="./skyroom-control-panel_files/logo(15).png">
-                                                <label>Link Dump</label><a class="install" title="Link Dump - Easily link to things around the net" href="">Install</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="Notepad - Personal notepad with sharing capability." alt="Notepad" src="./skyroom-control-panel_files/logo(16).png">
-                                                <label>Notepad</label><a class="install" title="Notepad - Personal notepad with sharing capability." href="">Install</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="Poll - A poll system that lets your visitors submit votes of any subject" alt="Poll" src="./skyroom-control-panel_files/logo(17).png">
-                                                <label>Poll</label><a class="install" title="Poll - A poll system that lets your visitors submit votes of any subject" href="">Install</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="Private Message - User can send private message to each other." alt="Private Message" src="./skyroom-control-panel_files/logo(18).png">
-                                                <label>Private Message</label><a class="install" title="Private Message - User can send private message to each other." href="">Install</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="Quotes - Maintaining a list of quotations that you find notable for sharing in your website" alt="Quotes" src="./skyroom-control-panel_files/logo(19).png">
-                                                <label>Quotes</label><a class="install" title="Quotes - Maintaining a list of quotations that you find notable for sharing in your website" href="">Install</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="Search - Provides a site wide search function." alt="Search" src="./skyroom-control-panel_files/logo(20).png">
-                                                <label>Search</label><a class="install" title="Search - Provides a site wide search function." href="">Install</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="ServerTime - A gadget to show the time of your server with any format" alt="ServerTime" src="./skyroom-control-panel_files/logo(21).png">
-                                                <label>ServerTime</label><a class="install" title="ServerTime - A gadget to show the time of your server with any format" href="">Install</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="Shoutbox - A fast chat box." alt="Shoutbox" src="./skyroom-control-panel_files/logo(22).png">
-                                                <label>Shoutbox</label><a class="install" title="Shoutbox - A fast chat box." href="">Install</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="Skeleton - A base gadget to use for new gadgets." alt="Skeleton" src="./skyroom-control-panel_files/logo(23).png">
-                                                <label>Skeleton</label><a class="install" title="Skeleton - A base gadget to use for new gadgets." href="">Install</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="Visit Counter - A pretty gadget to keep a track of how many visitors come to your site" alt="Visit Counter" src="./skyroom-control-panel_files/logo(24).png">
-                                                <label>Visit Counter</label><a class="install" title="Visit Counter - A pretty gadget to keep a track of how many visitors come to your site" href="">Install</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="Weather - Add your regions by geo positions and show their weather codition." alt="Weather" src="./skyroom-control-panel_files/logo(25).png">
-                                                <label>Weather</label><a class="install" title="Weather - Add your regions by geo positions and show their weather codition." href="">Install</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="Webcam - A small gadget to show many webcam images in your site" alt="Webcam" src="./skyroom-control-panel_files/logo(26).png">
-                                                <label>Webcam</label><a class="install" title="Webcam - A small gadget to show many webcam images in your site" href="">Install</a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="notify_box notify_components">
-                                <h2>Outdated gadgets</h2>
-                                <div class="notify_content">
-                                    <ul>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="Comments - A gadget to management comments" alt="Comments" src="./skyroom-control-panel_files/logo(27).png">
-                                                <label>Comments</label><a class="install" title="Comments - A gadget to management comments" href="">Update</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="Photo Organizer - A nice photo organizer for your site" alt="Photo Organizer" src="./skyroom-control-panel_files/logo(28).png">
-                                                <label>Photo Organizer</label><a class="install" title="Photo Organizer - A nice photo organizer for your site" href="">Update</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img width="32" height="32" title="Sitemap - Manage sitemap for search engines and display in user side." alt="Sitemap" src="./skyroom-control-panel_files/logo(29).png">
-                                                <label>Sitemap</label><a class="install" title="Sitemap - Manage sitemap for search engines and display in user side." href="">Update</a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="notify_box notify_version">
-                                <input type="hidden" id="do_checking" name="do_checking" value="1">
-                                <input type="hidden" id="jaws_version" name="jaws_version" value="1.2.0">
-                                <div class="notify_content">
-                                    <label><strong>Latest Jaws version: </strong>
-                                    </label>
-                                    <span id="latest_jaws_version"></span>
-                                </div>
-                            </div>
-                        </div>
+    <div id="container" class="container clearfix">
+        <div id="main-section" class="clearfix">
+            <div id="msgbox-wrapper">
+            </div>
+            <div id="mainbar" class="col-md-9">
+                <div class="row">
+                    <div class="main-menu">
+                        <h2 class="main-menu-header">General</h2>
+                        <a class="main-item col-sm-2 col-xs-4" href="">
+                            <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(30).png" title="The Jaws settings." alt="Settings"> Settings
+                        </a>
+                        <a class="main-item col-sm-2 col-xs-4" href="">
+                            <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(31).png" title="Manage gadgets and plugins" alt="Components"> Components
+                        </a>
+                        <a class="main-item col-sm-2 col-xs-4" href="">
+                            <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(32).png" title="Manage how you want your URL to be accesed or printed" alt="URL Manager"> URL Manager
+                        </a>
+                        <a class="main-item col-sm-2 col-xs-4" href="">
+                            <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(33).png" title="The Jaws layout." alt="Layout"> Layout
+                        </a>
+                        <a class="main-item col-sm-2 col-xs-4" href="">
+                            <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(34).png" title="User administration." alt="Users"> Users
+                        </a>
+                        <a class="main-item col-sm-2 col-xs-4" href="">
+                            <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(35).png" title="Manage what&#39;s happening around your web site" alt="Policy"> Policy
+                        </a>
+                        <a class="main-item col-sm-2 col-xs-4" href="">
+                            <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(36).png" title="Add/Edit language&#39;s strings" alt="Languages"> Languages
+                        </a>
+                        <a class="main-item col-sm-2 col-xs-4" href="">
+                            <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(37).png" title="Show information about OS, PHP, Database and Jaws" alt="System Information"> System Information
+                        </a>
+                        <a class="main-item col-sm-2 col-xs-4" href="">
+                            <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(38).png" title="A gadget to management tags." alt="Tags"> Tags
+                        </a>
+                        <a class="main-item col-sm-2 col-xs-4" href="">
+                            <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/view_site.png" title="View Site" alt="View Site"> View Site
+                        </a>
                     </div>
-
-                    <div id="footer">
-                        <p><strong>SKYROOM</strong>
-                            <br>ارتباطات آنلاین</p>
-                        <p>Powered by the <a href="">Jaws Project</a>
-                        </p>
+                    <div class="main-menu">
+                        <h2 class="main-menu-header">Gadgets</h2>
+                        <a class="main-item col-sm-2 col-xs-4" href="">
+                            <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(39).png" title="Link your blocks" alt="Blocks"> Blocks
+                        </a>
+                        <a class="main-item col-sm-2 col-xs-4" href="">
+                            <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(40).png" title="A multi user blog system. Supports trackbacks, pingbacks, commenting, and XML feeds." alt="Blog"> Blog
+                        </a>
+                        <a class="main-item col-sm-2 col-xs-4" href="">
+                            <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(41).png" title="Let visitors contact you." alt="Contacts"> Contacts
+                        </a>
+                        <a class="main-item col-sm-2 col-xs-4" href="">
+                            <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(42).png" title="Stores Frequently Asked Questions and their answers." alt="FAQ"> FAQ
+                        </a>
+                        <a class="main-item col-sm-2 col-xs-4" href="">
+                            <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(43).png" title="An easy and fast filebrowser to view your files" alt="FileBrowser"> FileBrowser
+                        </a>
+                        <a class="main-item col-sm-2 col-xs-4" href="">
+                            <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(44).png" title="Display navigation menus." alt="Menu"> Menu
+                        </a>
+                        <a class="main-item col-sm-2 col-xs-4" href="">
+                            <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(45).png" title="Sends Jaws notifications to users via drivers." alt="Notification"> Notification
+                        </a>
+                        <a class="main-item col-sm-2 col-xs-4" href="">
+                            <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(46).png" title="Online Payment Gadget" alt="Payment"> Payment
+                        </a>
+                        <a class="main-item col-sm-2 col-xs-4" href="">
+                            <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(47).png" title="User registration" alt="Registration"> Registration
+                        </a>
+                        <a class="main-item col-sm-2 col-xs-4" href="">
+                            <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(48).png" title="Online Communications" alt="Skyroom"> Skyroom
+                        </a>
+                        <a class="main-item col-sm-2 col-xs-4" href="">
+                            <img width="48" height="48" class="main-item-icon" src="./skyroom-control-panel_files/logo(49).png" title="A gadget to create and manage static content." alt="Static Page"> Static Page
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-1 col-md-1 col-sm-1"></div>
+            <script type="text/javascript">
+                init();
+            </script>
+            <div id="sidebar" class="col-md-3">
+                <div class="notify_box notify_components">
+                    <h2>Not installed gadgets</h2>
+                    <div class="notify_content">
+                        <ul>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="Logs - Logs user activity" alt="Logs" src="./skyroom-control-panel_files/logo.png">
+                                    <label>Logs</label><a class="install" title="Logs - Logs user activity" href="">Install</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="Theme Manager - Manage your site themes" alt="Theme Manager" src="./skyroom-control-panel_files/logo(1).png">
+                                    <label>Theme Manager</label><a class="install" title="Theme Manager - Manage your site themes" href="">Install</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="Faramooz - Learning Management System" alt="Faramooz" src="./skyroom-control-panel_files/logo(2).png">
+                                    <label>Faramooz</label><a class="install" title="Faramooz - Learning Management System" href="">Install</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="Mailer - Bulk mail sender &amp; tracker" alt="Mailer" src="./skyroom-control-panel_files/logo(3).png">
+                                    <label>Mailer</label><a class="install" title="Mailer - Bulk mail sender &amp; tracker" href="">Install</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="SMS - Sends, receives and stores messages" alt="SMS" src="./skyroom-control-panel_files/logo(4).png">
+                                    <label>SMS</label><a class="install" title="SMS - Sends, receives and stores messages" href="">Install</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="Address Book - AddressBook Desc" alt="Address Book" src="./skyroom-control-panel_files/logo(5).png">
+                                    <label>Address Book</label><a class="install" title="Address Book - AddressBook Desc" href="">Install</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="Banners - Banners management." alt="Banners" src="./skyroom-control-panel_files/logo(6).png">
+                                    <label>Banners</label><a class="install" title="Banners - Banners management." href="">Install</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="Directory - Total file management with sharing capability." alt="Directory" src="./skyroom-control-panel_files/logo(7).png">
+                                    <label>Directory</label><a class="install" title="Directory - Total file management with sharing capability." href="">Install</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="Emblems - A gadget to display emblems in your site" alt="Emblems" src="./skyroom-control-panel_files/logo(8).png">
+                                    <label>Emblems</label><a class="install" title="Emblems - A gadget to display emblems in your site" href="">Install</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="Events Calendar - Personal calendar with sharing capability." alt="Events Calendar" src="./skyroom-control-panel_files/logo(9).png">
+                                    <label>Events Calendar</label><a class="install" title="Events Calendar - Personal calendar with sharing capability." href="">Install</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="Feed Reader - Get RSS/ATOM/OPML news from any site and use it as a planet gadget" alt="Feed Reader" src="./skyroom-control-panel_files/logo(10).png">
+                                    <label>Feed Reader</label><a class="install" title="Feed Reader - Get RSS/ATOM/OPML news from any site and use it as a planet gadget" href="">Install</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="Forums - A simple forum" alt="Forums" src="./skyroom-control-panel_files/logo(11).png">
+                                    <label>Forums</label><a class="install" title="Forums - A simple forum" href="">Install</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="Friends - Link your friends" alt="Friends" src="./skyroom-control-panel_files/logo(12).png">
+                                    <label>Friends</label><a class="install" title="Friends - Link your friends" href="">Install</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="Glossary - A pretty glossary to keep updated the meaning of some of your favorite words" alt="Glossary" src="./skyroom-control-panel_files/logo(13).png">
+                                    <label>Glossary</label><a class="install" title="Glossary - A pretty glossary to keep updated the meaning of some of your favorite words" href="">Install</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="Launcher - A minimalistic gadget to run independent scripts" alt="Launcher" src="./skyroom-control-panel_files/logo(14).png">
+                                    <label>Launcher</label><a class="install" title="Launcher - A minimalistic gadget to run independent scripts" href="">Install</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="Link Dump - Easily link to things around the net" alt="Link Dump" src="./skyroom-control-panel_files/logo(15).png">
+                                    <label>Link Dump</label><a class="install" title="Link Dump - Easily link to things around the net" href="">Install</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="Notepad - Personal notepad with sharing capability." alt="Notepad" src="./skyroom-control-panel_files/logo(16).png">
+                                    <label>Notepad</label><a class="install" title="Notepad - Personal notepad with sharing capability." href="">Install</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="Poll - A poll system that lets your visitors submit votes of any subject" alt="Poll" src="./skyroom-control-panel_files/logo(17).png">
+                                    <label>Poll</label><a class="install" title="Poll - A poll system that lets your visitors submit votes of any subject" href="">Install</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="Private Message - User can send private message to each other." alt="Private Message" src="./skyroom-control-panel_files/logo(18).png">
+                                    <label>Private Message</label><a class="install" title="Private Message - User can send private message to each other." href="">Install</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="Quotes - Maintaining a list of quotations that you find notable for sharing in your website" alt="Quotes" src="./skyroom-control-panel_files/logo(19).png">
+                                    <label>Quotes</label><a class="install" title="Quotes - Maintaining a list of quotations that you find notable for sharing in your website" href="">Install</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="Search - Provides a site wide search function." alt="Search" src="./skyroom-control-panel_files/logo(20).png">
+                                    <label>Search</label><a class="install" title="Search - Provides a site wide search function." href="">Install</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="ServerTime - A gadget to show the time of your server with any format" alt="ServerTime" src="./skyroom-control-panel_files/logo(21).png">
+                                    <label>ServerTime</label><a class="install" title="ServerTime - A gadget to show the time of your server with any format" href="">Install</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="Shoutbox - A fast chat box." alt="Shoutbox" src="./skyroom-control-panel_files/logo(22).png">
+                                    <label>Shoutbox</label><a class="install" title="Shoutbox - A fast chat box." href="">Install</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="Skeleton - A base gadget to use for new gadgets." alt="Skeleton" src="./skyroom-control-panel_files/logo(23).png">
+                                    <label>Skeleton</label><a class="install" title="Skeleton - A base gadget to use for new gadgets." href="">Install</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="Visit Counter - A pretty gadget to keep a track of how many visitors come to your site" alt="Visit Counter" src="./skyroom-control-panel_files/logo(24).png">
+                                    <label>Visit Counter</label><a class="install" title="Visit Counter - A pretty gadget to keep a track of how many visitors come to your site" href="">Install</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="Weather - Add your regions by geo positions and show their weather codition." alt="Weather" src="./skyroom-control-panel_files/logo(25).png">
+                                    <label>Weather</label><a class="install" title="Weather - Add your regions by geo positions and show their weather codition." href="">Install</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="Webcam - A small gadget to show many webcam images in your site" alt="Webcam" src="./skyroom-control-panel_files/logo(26).png">
+                                    <label>Webcam</label><a class="install" title="Webcam - A small gadget to show many webcam images in your site" href="">Install</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="notify_box notify_components">
+                    <h2>Outdated gadgets</h2>
+                    <div class="notify_content">
+                        <ul>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="Comments - A gadget to management comments" alt="Comments" src="./skyroom-control-panel_files/logo(27).png">
+                                    <label>Comments</label><a class="install" title="Comments - A gadget to management comments" href="">Update</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="Photo Organizer - A nice photo organizer for your site" alt="Photo Organizer" src="./skyroom-control-panel_files/logo(28).png">
+                                    <label>Photo Organizer</label><a class="install" title="Photo Organizer - A nice photo organizer for your site" href="">Update</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img width="32" height="32" title="Sitemap - Manage sitemap for search engines and display in user side." alt="Sitemap" src="./skyroom-control-panel_files/logo(29).png">
+                                    <label>Sitemap</label><a class="install" title="Sitemap - Manage sitemap for search engines and display in user side." href="">Update</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="notify_box notify_version">
+                    <input type="hidden" id="do_checking" name="do_checking" value="1">
+                    <input type="hidden" id="jaws_version" name="jaws_version" value="1.2.0">
+                    <div class="notify_content">
+                        <label><strong>Latest Jaws version: </strong>
+                        </label>
+                        <span id="latest_jaws_version"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p><strong>SKYROOM</strong>
+                <br>ارتباطات آنلاین</p>
+            <p>Powered by the <a href="">Jaws Project</a>
+            </p>
         </div>
     </div>
 
