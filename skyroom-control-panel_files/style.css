@@ -234,6 +234,7 @@ font-size:85%;
 font-size:large;
 }
 .main-menu{
+margin-bottom: 10px;
 display:block;
 clear:left;
 }
@@ -869,4 +870,16 @@ background-color:#edf3fe;
 }
 .piwi_option_even{
 background-color:#fff;
+}
+
+@media (min-width: 768px) {
+	.main-menu > .row > :nth-child(6n+7) {
+		clear: left;
+	}
+}
+
+@media (max-width: 767px) {
+	.main-menu > .row > :nth-child(3n+4) {
+		clear: left;
+	}
 }
