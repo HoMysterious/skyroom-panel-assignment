@@ -133,7 +133,7 @@ color:#000;
 font-size:85%;
 }
 /* ----- LOGIN INFO ----- */
-#login-info{
+.login-info{
 color:#fff;
 float:right;
 background:#729fcf;
@@ -142,21 +142,21 @@ padding:2px;
 margin:5px 0;
 width:248px;
 }
-#login-info a{
+.login-info a{
 color:#fff;
 text-decoration:none;
 }
-#login-info a:hover{
+.login-info a:hover{
 text-decoration:underline;
 }
-#login-info img{
+.login-info img{
 border:1px solid #3465a4;
 background-color:#fff;
 padding:2px;
 margin-right:5px;
 float:left;
 }
-#login-info .name{
+.login-info .name{
 max-width:192px;
 overflow:hidden;
 margin-top:5px;
@@ -164,7 +164,7 @@ font-weight:bold;
 white-space:nowrap;
 display:inline-block;
 }
-#login-info .logout{
+.login-info .logout{
 margin-top:10px;
 font-size:.8em;
 }
@@ -877,10 +877,36 @@ background-color:#fff;
 	.main-menu > .row > :nth-child(6n+7) {
 		clear: left;
 	}
+
+	.support-icon {
+		display: none;
+	}
 }
 
 @media (max-width: 767px) {
 	.main-menu > .row > :nth-child(3n+4) {
 		clear: left;
+	}
+
+	.support-icon {
+		position: relative;
+		float: right;
+		margin-top: 22px;
+	}
+	.support-icon > a {
+		color: #cdc4ff;
+		font-size: 1.4em;
+	}
+
+	.support-icon > a:hover {
+		color: white;
+		text-decoration: none;
+	}
+
+	.support-icon .login-info {
+		position: absolute;
+		right: -5px;
+		top: 20px;
+		z-index: 9999;
 	}
 }

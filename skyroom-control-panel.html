@@ -33,7 +33,7 @@
             <h1><a href="">SKYROOM: Control Panel</a></h1>
             <p>ارتباطات آنلاین</p>
         </div>
-        <div id="login-info">
+        <div class="login-info hidden-xs">
             <img alt="" width="48" height="48" src="./skyroom-control-panel_files/photo48px.png">
             <div class="name"><a href="">پشتیبان</a>
             </div>
@@ -41,6 +41,20 @@
                 <a href="">Logout</a> -
                 <a href="">View Site</a>
             </div>
+        </div>
+        <div class="support-icon">
+			<a href="" id="toggle-button" class="glyphicon glyphicon-user"></a>
+
+			<div class="login-info" style="display: none;">
+            <img alt="" width="48" height="48" src="./skyroom-control-panel_files/photo48px.png">
+            <div class="name"><a href="">پشتیبان</a>
+            </div>
+            <div class="logout">
+                <a href="">Logout</a> -
+                <a href="">View Site</a>
+            </div>
+        </div>
+        </div>
         </div>
     </div>
 
@@ -343,6 +357,28 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+    	$('.support-icon > a').click(function(e) {
+    		e.preventDefault();
+    		var c = $('.support-icon > .login-info');
+    		if(c.is(':visible')) {
+    			c.fadeOut();
+    		} else {
+    			c.fadeIn();
+    		}
+    	});
+    	$(document).on('click', function(e) {
+    		if(e.target.id == 'toggle-button') {
+    			return;
+    		}
+    		var c = $('.support-icon > .login-info');
+    		console.log(c[0]);
+    		if(c.is(':visible')) {
+    			c.fadeOut();
+    		}
+    	});
+    </script>
 </body>
 
 </html>
