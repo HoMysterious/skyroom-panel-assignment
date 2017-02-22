@@ -18,23 +18,11 @@ text-decoration:line-through;
 /* ----- CONTAINER ----- */
 #container{
 background:transparent;
-margin:0 auto;
-padding:0;
-display:block;
 text-align:left;
-width:980px;
 font-size:smaller;
-}
-html>body #container{
-width:980px;
 }
 /* ----- HEADER ----- */
 #header{
-width:980px;
-height:72px;
-display:block;
-margin:0 auto;
-padding:0;
 text-align:left;
 font-size:smaller;
 }
