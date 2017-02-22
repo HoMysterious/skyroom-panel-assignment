@@ -242,14 +242,10 @@ padding-top:5px;
 padding-bottom:5px;
 }
 .main-item{
+padding-top: 10px;
+padding-bottom: 10px;
 text-decoration:none;
-width:68px;
-height:74px;
-margin:1px;
-padding:4px;
 color:#000;
-float:left;
-display:block;
 border:1px solid #fff;
 text-align:center;
 }
