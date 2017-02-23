@@ -910,3 +910,12 @@ background-color:#fff;
 		z-index: 9999;
 	}
 }
+
+@media (max-width: 768px) and (min-width: 550px) {
+	#sidebar .notify_box {
+		width: 50%;
+		float: left;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+}
