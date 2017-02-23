@@ -359,23 +359,17 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script>
-    	$('.support-icon > a').click(function(e) {
-    		e.preventDefault();
-    		var c = $('.support-icon > .login-info');
-    		if(c.is(':visible')) {
-    			c.fadeOut();
-    		} else {
-    			c.fadeIn();
-    		}
-    	});
     	$(document).on('click', function(e) {
-    		if(e.target.id == 'toggle-button') {
-    			return;
-    		}
     		var c = $('.support-icon > .login-info');
-    		console.log(c[0]);
+    		var b = false;
+    		if(e.target.id == 'toggle-button') {
+    			e.preventDefault();
+    			b = true;
+    		}
     		if(c.is(':visible')) {
     			c.fadeOut();
+    		} else if(b) {
+    			c.fadeIn();
     		}
     	});
     </script>
