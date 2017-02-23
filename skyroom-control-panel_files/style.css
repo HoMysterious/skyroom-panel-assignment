@@ -884,10 +884,6 @@ background-color:#fff;
 }
 
 @media (max-width: 767px) {
-	.main-menu > .row > :nth-child(3n+4) {
-		clear: left;
-	}
-
 	.support-icon {
 		position: relative;
 		float: right;
@@ -911,6 +907,12 @@ background-color:#fff;
 	}
 }
 
+@media (max-width: 549px) {
+	.main-menu > .row > :nth-child(3n+4) {
+		clear: left;
+	}
+}
+
 @media (max-width: 768px) and (min-width: 550px) {
 	.main-menu .main-item {
 		width: 25%;
@@ -921,5 +923,9 @@ background-color:#fff;
 		float: left;
 		padding-right: 15px;
 		padding-left: 15px;
+	}
+
+	.main-menu > .row > :nth-child(4n+5) {
+		clear: left;
 	}
 }
