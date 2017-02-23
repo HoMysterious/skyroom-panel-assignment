@@ -246,6 +246,9 @@ padding-bottom:5px;
 .main-item{
 padding-top: 10px;
 padding-bottom: 10px;
+padding-left: 0;
+padding-right: 0;
+width: 68px;
 text-decoration:none;
 color:#000;
 border:1px solid #fff;
@@ -874,9 +877,9 @@ background-color:#fff;
 }
 
 @media (min-width: 768px) {
-	.main-menu > .row > :nth-child(6n+7) {
+/*	.main-menu > .row > :nth-child(6n+7) {
 		clear: left;
-	}
+	}*/
 
 	.support-icon {
 		display: none;
@@ -907,11 +910,11 @@ background-color:#fff;
 	}
 }
 
-@media (max-width: 549px) {
+/*@media (max-width: 549px) {
 	.main-menu > .row > :nth-child(3n+4) {
 		clear: left;
 	}
-}
+}*/
 
 @media (max-width: 767px) and (min-width: 550px) {
 	.main-menu .main-item {
@@ -931,7 +934,7 @@ background-color:#fff;
 		padding-left: 10px;
 	}
 
-	.main-menu > .row > :nth-child(4n+5) {
+/*	.main-menu > .row > :nth-child(4n+5) {
 		clear: left;
-	}
+	}*/
 }
