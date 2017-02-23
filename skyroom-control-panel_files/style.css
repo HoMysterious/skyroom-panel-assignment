@@ -921,8 +921,14 @@ background-color:#fff;
 	#sidebar .notify_box {
 		width: 50%;
 		float: left;
-		padding-right: 15px;
-		padding-left: 15px;
+	}
+
+	.not_installed_gadgets {
+		padding-right: 10px;
+	}
+
+	.outdated_gadgets {
+		padding-left: 10px;
 	}
 
 	.main-menu > .row > :nth-child(4n+5) {
